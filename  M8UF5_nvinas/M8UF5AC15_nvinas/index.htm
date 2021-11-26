@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        </style>
+        <style>
+            body {background-color: #EFEFEF;}
+        </style>
+        <title>Formulari d'enviament</title>
+        <script type="text/javascript">
+            function validar(){
+            var psswd=document.getElementById("psswd").value;
+            var confpsswd=document.getElementById("confpsswd").value;
+            if(psswd==confpsswd){
+            return true;
+            }
+            else{
+            alert("No coincideix");
+            return false;
+            }
+            }
+            </script>
+    </head>
+    <body>
+
+        <h1></h1>
+        <p style="color: cornsilk;
+                    background-color: blue;
+                    font-family:verdana;">Enviar missatge</p>
+        <img align="right" width="30" height="30" src="/home/smx2b/Escriptori/ M8UF5_nvinas/M8UF5AC15_nvinas/img/gb_reload_s.gif">
+        <TABLE>
+            <tr align="center">
+                <td>
+                    <form action="get">
+                        <label for="fname">Nom:</label>
+                        <input type="text" id="fname" name="fname" value="">
+                        <p></p>            
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" name="email" value="">
+                        <p></p>
+                        <label for="myfile">Arxiu:</label>
+                        <input type="email" id="email" name="email" value="">
+                        <p></p>
+                        <input type="file" id="myfile" name="myfile">
+                        <p></p>
+                        <label for="myfile">Imatge:</label>
+                        <input type="email" id="email" name="email" value="">
+                        <p></p>
+                        <input type="file" id="myfile" name="myfile">
+                        <p></p>
+                        <label for="pwd">Usuari:</label>
+                        <p></p>
+                        <input type="text" id="psswd" name="pwd" minlength="8">
+                        <p></p>
+                        <label for="pwd">Contrasenya:</label>
+                        <p></p>
+                        <input type="password" id="psswd" name="pwd" minlength="8">
+                        <p></p>
+                        <label for="pwd">Confirmar contrasenya:</label>
+                        <p></p>
+                        <input type="password" id="confpsswd" name="pwd" minlength="8">
+                        <p></p>
+                        <input type="submit" value="Validar">
+                        <p></p>
+                        <p>Quins jocs t'interesen?</p>
+                        <input type="checkbox" checked="true" id="opcio1" name="opcio1" value="opcio1">
+                        <label for="opcio1">Assasins Creed Origins</label>
+                        <p></p>
+                        <input type="checkbox" id="opcio2" name="opcio2" value="opcio2">
+                        <label for="opcio2">Assasins creed Odyssey</label>
+                        <p></p>
+                        <input type="checkbox" id="opcio3" name="opcio3" value="opcio3">
+                        <label for="opcio3">Assasins Creed Valhalla</label>
+                        <p></p>
+                        <input type="checkbox" id="opcio4" name="opcio4" value="opcio4">
+                        <label for="opcio4">Assasins Creed Black Flag</label>
+                        <p></p>
+                    </form>
+                    <p><font size=-2>El tamany de l'arxiu i la imatge no pot excedir els 4 KBytes</font></p>
+                    <form action="get">
+                        <label for="opcio">Requereix resposta:</label>
+                        <input type="radio" checked="true" name="opcio" value="opcio">Sí
+                        <input type="radio" name="opcio2" value="opcio2">No
+                        <p></p>
+                        <label for="missatge">Missatge</label>
+                        <p></p>
+                        <TABLE>
+                            <TR>
+                                <TD colspan="45" rowspan="5"><textarea rows="4" cols="50" name="comment" form="usrform"></textarea></TD>
+                            </TR>
+                        </TABLE>
+                        <p></p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </form>
+                </td> 
+            </tr>
+        </TABLE>
+
+    </body>
+</html>
